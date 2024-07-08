@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename ='style.css')}}">
 </head>
 <body>
-    <h1>Conversor<br>Celcius - Fahrenheit</h1>
-    <form method="post" action="/">
-        <label for="temperaturaC">Temperatura</label>
-        <input type="text" name="temperaturaC" id="temperaturaC" placeholder="Insira a Temperatura em Celcius" required>
-        <button type="submit">Converter</button>
-    </form>
-    <h4>A temperatura em Fahrenheit é: {{ temperaturaF }}</h4>
+    <div class="box">
+        <h1>Conversor<br>Celcius - Fahrenheit</h1>
+        <form method="post" action="/">
+            <label for="temperaturaC">Temperatura abaixo</label>
+            <input type="text" name="temperaturaC" id="temperaturaC" placeholder="Insira a Temperatura em Celcius" required>
+            <button type="submit">Converter</button>
+        </form>
+        <h4>A temperatura em Fahrenheit é: {{ temperaturaF }}</h4>
+    </div>
 </body>
 </html>
